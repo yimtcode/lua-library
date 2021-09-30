@@ -15,7 +15,7 @@
 - 数组（arrayx.lua）
   - min：最小值
   - max：最大值
-  - sum：全计
+  - sum：总计
   - any：存在任意满足条件
   - filter：过滤
   - find：查找
