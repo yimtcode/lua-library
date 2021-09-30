@@ -35,9 +35,7 @@ end
 --- 从左弹出
 ---@return value any
 function deque:pop_left()
-    if self:len() == 0 then
-        error("deque is empty")
-    end
+    assert(self:len() == 0, "deque is empty")
 
     local value = self[self.first]
     self[self.first] = nil
@@ -49,9 +47,7 @@ end
 --- 从右弹出
 ---@return value any
 function deque:pop_right()
-    if self:len() == 0 then
-        error("deque is empty")
-    end
+    assert(self:len() == 0, "deque is empty")
 
     local value = self[self.last]
     self[self.last] = nil
